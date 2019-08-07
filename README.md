@@ -2,6 +2,9 @@
 Api rest from giphy.com
 
 
+You will need create your Api key access here: https://developers.giphy.com
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
