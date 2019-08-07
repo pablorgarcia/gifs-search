@@ -34,10 +34,10 @@ export class SearchForm extends Component {
             className="input" 
             onChange={this._handleChange}
             type="text" 
-            placeholder="Gif to search" />
+            placeholder="Use me to search a Gif" />
           </div>
           <div className="control">
-            <button className="button is-info">
+            <button className="button btn-animate">
               Search
             </button>
           </div>

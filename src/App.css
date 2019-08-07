@@ -1,11 +1,13 @@
 .App {
   padding-top: 36px;
   text-align: center;
+  padding: 5vh 5vw
 }
 
 .SearchForm-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5em;
 }
 
 .GifsList {
@@ -16,6 +18,26 @@
 }
 
 .GifsList-item {
-  margin-bottom: 24px;
-  width: 48%;
+  width: 36vw;
+  height: 36vw;
+  margin: 1vh 2vw;
+}
+
+.btn-animate {
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  border: none;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -15,7 +15,7 @@ class App extends Component {
 
   _renderResults() {
     return this.state.results.length === 0
-    ? <p>Sorry! have not results. No Gif, no fun</p>
+    ? <p>This search have not results. No Gif, no fun!</p>
     : <GifList gifs={this.state.results}></GifList>
   }
 
@@ -30,7 +30,7 @@ class App extends Component {
           {
             this.state.usedSearch 
             ? this._renderResults()
-            : <small>Use the form to search a Gif</small>
+            : <small>Let's rock it out!</small>
           }
         </div>
       </div>
