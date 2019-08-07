@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { API_GIF_KEY } from '../../env'
+import { API_GIF_KEY } from '../env'
 
 // Create your Api key access here: https://developers.giphy.com
 const API_KEY = API_GIF_KEY
