@@ -1,19 +1,22 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   padding-top: 36px;
   text-align: center;
-  padding: 5vh 5vw
+  padding: 10vh 5vw 5vh;
 }
 
 .SearchForm-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5em;
 }
 
 .GifsList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-self: flex-start;
   padding: 16px;
 }
 
@@ -40,4 +43,25 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 90vw;
+  height: 10vh;
+  z-index: 1;
+  overflow: hidden;
+  background-color: white;
+}
+
+.logo {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  word-break: break-word;
 }

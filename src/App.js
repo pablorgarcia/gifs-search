@@ -21,10 +21,13 @@ class App extends Component {
 
   render () {
     return (
-      <div className="App">
-        <Title>Search Gifs</Title>
-        <div className="SearchForm-wrapper">
-          <SearchForm onResults={this._handleResults}></SearchForm>
+      <div className='App'>
+        <div className='header'>
+          <Title>Search Gifs</Title>
+          <div className='SearchForm-wrapper'>
+            <SearchForm onResults={this._handleResults}></SearchForm>
+          </div>
+          <small>Created with love by <a href='https://pablogarcia.dev/?app-search-gifs' title='Pablo García: Jr. Full-Stack Web developer'>Pablo García</a></small>
         </div>
         <div>
           {
