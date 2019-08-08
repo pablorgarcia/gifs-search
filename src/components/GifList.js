@@ -17,7 +17,7 @@ export class GifList extends Component {
               <div key={gif.id} className='GifsList-item'>
                 <Gif 
                 title={gif.title}
-                embed_url={gif.embed_url}
+                image={gif.images.downsized.url}
                 />
               </div>
             )

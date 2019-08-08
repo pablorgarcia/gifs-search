@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 export class Gif extends Component {
   static propTypes = {
     title: propTypes.string,
-    embed_url: propTypes.string
+    image: propTypes.string
   }
 
   _handleCapitalizeFirtsLetter = (string) => {
@@ -12,7 +12,7 @@ export class Gif extends Component {
   }
 
   render () {
-    const { title, embed_url } = this.props
+    const { title, image } = this.props
     const titleCap = this._handleCapitalizeFirtsLetter(title)
 
     return (
@@ -20,7 +20,7 @@ export class Gif extends Component {
         <div className="card-image">
           <figure className="image">
             <img 
-             src={embed_url} 
+             src={image} 
              alt={titleCap} />
           </figure>
         </div>
