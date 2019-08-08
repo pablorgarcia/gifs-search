@@ -29,7 +29,7 @@ export class SearchForm extends Component {
     return (
       <form onSubmit={this._handleSubmit}>
         <div className="field has-addons">
-          <div className="control">
+          <div className="control search-input">
             <input 
             className="input" 
             onChange={this._handleChange}

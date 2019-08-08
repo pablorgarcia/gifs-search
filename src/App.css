@@ -12,18 +12,21 @@
   justify-content: center;
 }
 
+.search-input {
+  width: 33vw;
+}
+
 .GifsList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-self: flex-start;
-  padding: 16px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .GifsList-item {
-  width: 36vw;
-  height: 36vw;
-  margin: 1vh 2vw;
+  width: 33vw;
+  margin: 0 1vh 1vh 0;
 }
 
 .btn-animate {
@@ -59,6 +62,7 @@
 }
 
 .logo {
+  min-width: 20vw;
   color: #363636;
   font-size: 2rem;
   font-weight: 600;
