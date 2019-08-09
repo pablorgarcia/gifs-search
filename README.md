@@ -1,6 +1,8 @@
 # Search Gifs
 A Gif search engine created with React and connected with Api rest from Giphy.com
 
+![Texto alternativo](/images/search-gif.png)
+
 ## Tools
 React App
 Framework CSS: https://bulma.io/
