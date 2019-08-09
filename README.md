@@ -1,17 +1,19 @@
 # Search Gifs
-A Gif search engine created with React and connected with Api rest from Giphy.com
+A Gif search engine created with React and connected with Api REST from Giphy.com
 
-![Texto alternativo](/images/search-gif.png)
+![Search Gifs App](/images/search-gif.png)
 
 ## Tools
-React App
-Framework CSS: https://bulma.io/
-API Rest: https://developers.giphy.com
+- React App
+- Framework CSS: https://bulma.io/
+- API Rest: https://developers.giphy.com
 
 You will need create your Api key access here: https://developers.giphy.com
 
 
+
 ---
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
