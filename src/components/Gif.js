@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export class Gif extends Component {
   static propTypes = {
+    id: propTypes.string,
     title: propTypes.string,
     image: propTypes.string
   }
@@ -12,11 +14,11 @@ export class Gif extends Component {
   }
 
   render () {
-    const { title, image } = this.props
+    const { id, title, image } = this.props
     const titleCap = this._handleCapitalizeFirtsLetter(title)
 
     return (
-      <div className="card">
+      <Link to={`/detail/${id}`} className="card">
         <div className="card-image">
           <figure className="image">
             <img 
@@ -31,7 +33,7 @@ export class Gif extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
     ) 
   }
 }

@@ -1,41 +1,23 @@
 import React, { Component } from 'react';
-import { Title } from './components/Title';
-import { SearchForm } from './components/SearchForm';
-import { GifList } from './components/GifList';
+import { Switch, Route } from 'react-router-dom';
+
+import { Home } from './pages/Home';
+import { Detail } from './pages/Detail';
+import { NotFound } from './pages/NotFound';
 
 import './App.css';
 import 'bulma/css/bulma.css';
 
 class App extends Component {
-  state = { usedSearch: false, results: [] }
-
-  _handleResults = (results) => {
-    this.setState({ results, usedSearch: true })
-  }
-
-  _renderResults() {
-    return this.state.results.length === 0
-    ? <p>This search have not Gif, no fun!</p>
-    : <GifList gifs={this.state.results}></GifList>
-  }
 
   render () {
     return (
       <div className='App'>
-        <div className='header'>
-          <Title>Search Gifs</Title>
-          <div className='SearchForm-wrapper'>
-            <SearchForm onResults={this._handleResults}></SearchForm>
-          </div>
-          <small>Created with love by <a href='https://pablogarcia.dev/?app-search-gifs' title='Pablo García: Jr. Full-Stack Web developer'>Pablo García</a></small>
-        </div>
-        <div>
-          {
-            this.state.usedSearch 
-            ? this._renderResults()
-            : <small>Let's rock it out!</small>
-          }
-        </div>
+        <Switch>
+          <Route exact path='/' component={Home}></Route>
+          <Route exact path='/detail/:gifId' component={Detail}></Route>
+          <Route component={NotFound}></Route>
+        </Switch>
       </div>
     );
   }
