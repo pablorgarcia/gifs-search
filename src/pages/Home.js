@@ -21,11 +21,11 @@ export class Home extends Component {
     return (
       <div>
         <div className='header'>
-            <Title>Search Gifs</Title>
+            <Title>Gifs Search</Title>
             <div className='SearchForm-wrapper'>
               <SearchForm onResults={this._handleResults}></SearchForm>
             </div>
-            <small>Created with love by <a href='https://pablogarcia.dev/?app-search-gifs' title='Pablo García: Jr. Full-Stack Web developer'>Pablo García</a></small>
+            <small>Created with love by <a href='https://pablogarcia.dev/?app-gifs-search' title='Pablo García: Jr. Full-Stack Web developer'>Pablo García</a></small>
         </div>
         <div>
           {
