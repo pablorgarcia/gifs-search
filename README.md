@@ -1,6 +1,6 @@
 # Gifs Search
 
-![Gifs Search App](http://gif-search-app.surge.sh/)
+[Gifs Search App](http://gif-search-app.surge.sh/)
 
 A Gif search engine created with React and connected with Api REST from Giphy.com
 
